@@ -49,6 +49,8 @@ Before training predictive models, an exploratory analysis was conducted to unco
 ### 3. The Nuance of Body Mass Index (BMI)
 * **Observation:** The isolated BMI distributions for both stroke and non-stroke groups display significant overlap, with the vast majority of observations concentrated between 25 and 35. While stroke cases lean slightly toward higher BMI values, the visual distinction between the two classes is not sharply pronounced.
 * **Key Insight:** When evaluated independently during EDA, BMI does not strongly differentiate the two classes, suggesting limited predictive power in isolation. *(Note: As detailed in the Feature Importance section, advanced tree-based models later identified BMI as a top predictor, indicating that its interaction with other variables like Age and Glucose is highly significant, even if it doesn't separate the classes linearly).*
+* <img width="2020" height="601" alt="Distribution Analyses" src="https://github.com/user-attachments/assets/8532e670-3b2c-44a5-8ac4-2c19a3b1e3e7" />
+
 ### 4. Hypertension
 * **Observation:** The majority of individuals in the dataset do not suffer from hypertension. However, when isolating stroke outcomes, those with hypertension exhibit a notably higher proportion of stroke cases compared to the non-hypertensive group.
 * **Key Insight:** There is a clear positive association between hypertension and stroke occurrence, aligning with established medical consensus that high blood pressure is a major, direct risk factor.
